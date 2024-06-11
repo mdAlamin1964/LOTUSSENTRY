@@ -1,0 +1,88 @@
+//  Mobile screen
+$responsive_mobile_width: 768px;
+
+@media (max-width: $responsive_mobile_width) {
+    
+    // Main logo
+    .main-logo {
+        img {
+            max-width: 40px;
+        }
+        .logo-text {
+            font-size: 1.2em;
+        }
+    }
+
+
+
+    // Header
+    .header {
+        .left{
+            justify-content: center;
+        }
+        .right {
+            margin-top: 20px;
+            justify-content: center;
+        }
+    }
+
+
+
+
+
+    // home
+    .home {
+        .main-saction {
+            .middle-saction {
+                .video-box{ 
+                    max-height: 160px;
+                    .svg-icon {
+                        width: 70px;
+                    }
+                }
+            }
+                
+        }
+    }
+
+
+
+
+    .asset-list {
+        ul {
+            display: block;
+            li {
+                display: block;
+            }
+        }
+    }
+
+
+
+    .benefit-box {
+        max-width: 350px;
+        margin: auto;
+        ul {
+            display: block;
+        }
+    }
+
+
+
+    .left-bar {
+        display: none;
+    }
+
+
+
+    
+    .sing-up-form {
+        .sign-up-box {
+            display: block;
+            .btn-1 {
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    transition: 0.2s;
+}
+
+
+p{
+    margin: 0;
+    padding: 0;
+    @include Montserrat-Medium;
+    font-size: 14px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    margin: 0;
+    padding: 0;
+    @include Montserrat-Medium;
+    font-size: 14px;
+    color: $font_color_gray;
+    text-decoration: none;
+}
+
+
+h4{
+    @include NeueKabel-Medium;
+    color:$font_color_dark_white;
+}
+
+
+h6 {
+    @include NeueKabel-Light;
+    font-size: 18px;
+    color: $color_primary;
+}

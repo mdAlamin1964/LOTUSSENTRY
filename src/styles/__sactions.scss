@@ -1,0 +1,39 @@
+// Header sactions
+.header {
+    background: $header_background;
+    border-bottom: 1px solid $border_color;
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        .header-menu {
+            display: flex;
+            align-items: center;
+
+
+        }
+    }
+}
+
+
+
+// Footer
+.main-footer {
+    z-index: 99;
+    background: $footer-background;
+    border-top: 1px solid $border_color;
+    .footer-box-1 {
+        .footer-logo {
+            .logo-text {
+                font-size: 1.0em;
+            }
+        }
+    }
+}

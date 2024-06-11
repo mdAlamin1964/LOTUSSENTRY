@@ -1,0 +1,109 @@
+// Home left bar
+.home {
+    .left-bar {
+        border-right: 1px solid $border_color;
+        overflow: hidden;
+        position: sticky;
+        position: -webkit-sticky; /* For Safari */
+        top:0;
+        height: 100vh;
+        .left-bar-menu {
+            border: 1px solid $border_color;
+            padding: 7px;
+            border-radius: 4px;
+            display: inline-block;
+            li {
+                
+                border: 1px solid $border_color;
+                padding: 8px;
+                border-radius: 4px;
+                background-color: $button_background_1;
+                &:hover {
+                    background-color: $button_background_1_hover;
+                }
+            }
+        }
+        .navigation {
+            .left-bar-menu {
+                border: none;
+                li {
+                    background-color: transparent;
+                    border: none;
+                    &:hover {
+                        background-color: $button_background_1_hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// home main saction
+.home {
+    .main-saction {
+        padding: 0 8%;
+        .top-saction {
+            text-align: center;
+
+            .call-to-action-saction {
+                display: inline-block;
+                margin: auto;
+            }
+        }
+
+
+        .middle-saction {
+            .video-box{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .svg-icon {
+                    width: 100px;
+                    color: $color_primary;
+                    opacity: 0.7;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .choose-path{
+                text-align: center;
+                .path-image{
+                    img{
+                        width: 100%;
+                        max-width: 700px;
+                    }
+                }
+            }
+        }
+
+
+        .asssets-saction{
+            border-top: 1px solid $border_color;
+            border-bottom: 1px solid $border_color;
+
+        }
+
+
+        .join-to-wish {
+            background: $button_background_1;
+            text-align: center;
+
+            h1 {
+                color: $font_color_white;
+                margin-bottom: 0px;
+            }
+            p {
+                color: $font_color_white;
+            }
+        }
+    }
+}

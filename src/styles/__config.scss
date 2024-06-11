@@ -1,0 +1,385 @@
+$body_background: #0A0D11;
+$btn_border_color: #9a4ace;
+$button_background_1: #161c25;
+$button_background_1_hover: #1f2632;
+$border_color: #20242c;
+$color_primary: #811DC2;
+$color_secondry: #811dc2;
+$footer-background:#07080A;
+$font_color_dark_white: #BABBBB;
+$font_color_gray: #626365;
+$font_color_white: #F5F5F5;
+$header_background: #0E1116;
+
+
+// Glowoing button style
+.glowing_btn {
+    border: 2px solid $btn_border_color;
+    border-radius: 5px;
+    background: none;
+    color: $font_color_white;
+    padding: 7px 12px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        box-shadow: 0 0 15px 3px #811dc2;
+    }
+}
+
+
+// Buttons
+.btn-1 {
+    color: $font_color_gray;
+    background: $button_background_1;
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: 1px solid $border_color;
+    cursor: pointer;
+    margin-left: 7px;
+    &:hover {
+        background: $button_background_1_hover;
+    }
+}
+
+.footer-title {
+    @include Montserrat-Medium;
+    color: $font_color_white;
+    font-size: 14px;
+}
+
+.gray-text {
+    @include Montserrat-Medium;
+    font-size: 14px;
+    color: $font_color_gray;
+}
+
+
+
+
+
+// icons
+.material-symbols-outlined {
+    font-size: 20px;
+}
+
+
+
+
+
+// Drop down
+.has-drop-down {
+    position: relative;
+    &:hover .drop-down {
+        display: block;
+    }
+    .drop-down {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: $button_background_1;
+        width: 130px;
+        border: 1px solid $border_color;
+        border-radius: 3px;
+        margin-top: 0px;
+
+        ul {
+            li {
+                padding: 3px 0;
+                border: 1px solid #181e29;
+                &:hover {
+                    background: $button_background_1_hover;
+                }
+                p {
+                    color: $font_color_white;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Main logo
+.main-logo {
+    display: flex;
+    align-items: center;
+    img {
+        width: 100%;
+        max-width: 50px;
+        margin-right: 5px;
+    }
+    .logo-text {
+        @include georgia;
+        color:$font_color_white;
+        font-size: 1.3em;
+
+    }
+}
+
+
+
+
+
+// inline icon
+
+.inline-icon {
+    display: flex;
+    align-items: center;
+    svg {
+        width: 18px;
+        margin-right: 5px;
+    }
+    img {
+        width: 22px;
+        margin-right: 5px;
+    }
+    .icon-text {
+        text-align: center;
+        color: $font_color_gray;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 1.2em;
+        margin-right: 10px;
+    }
+}
+
+
+// List style
+.list {
+    ul {
+        li {
+            margin-bottom: 8px;
+            img {
+                width: 100%;
+                max-width: 120px;
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                svg,p,a {
+                color: $font_color_white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// menu title
+.menu-title {
+    color: $font_color_gray;
+    font-size: 14px;
+    text-transform: uppercase;
+    @include Montserrat-Medium;
+}
+
+
+
+
+// Main title
+.saction-main-title {
+    color: $color_secondry;
+    @include NeueKabel;
+    line-height: 1.1em;
+}
+
+
+// rooling-text
+.rooling-text {
+    @include NeueKabel-Light;
+    text-align: center;
+    color: $font_color_gray;
+    font-size: 28px;
+
+}
+
+
+// pointer
+.pointer {
+    cursor: pointer;
+}
+
+
+
+
+// Assets-list
+.asset-list {
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            border: 1px solid #20242c;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: $button_background_1;
+            margin: 0 2px;
+            margin-bottom: 5px;
+            width: 100%;
+
+            &:hover {
+                background: $button_background_1_hover;
+            }
+            img {
+                width: 40px;
+                margin-right: 5px;
+            }
+            p{
+                color: $font_color_white !important;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+// thin-text
+.thin-text {
+    color: $font_color_dark_white;
+    @include Montserrat-Light;
+    font-size:12px;
+}
+
+
+
+
+// benefit-box
+.benefit-box {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+
+        li {
+            background-color: $button_background_1;
+            padding: 15px;
+            border: 1px solid $border_color;
+            position: relative;
+            .thin-text {
+                margin-top: 18px;
+                margin-bottom: 80px;
+            }
+            a {
+                margin-top: 25px !important;
+                display: block;
+                text-align: center;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }    
+        }
+    }
+}
+
+
+
+
+
+.learn-btn {
+    color: $font_color_white;
+    text-decoration: underline;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+
+
+// Pop up area
+.pop-up {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: rgba(120, 109, 109, 0.323);
+    .pop_up_content {
+        position: absolute;
+        width: 95%;
+        max-width: 500px;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $button_background_1;
+        padding: 20px;
+        border-radius: 10px;
+
+        .close-btn-area {
+            position: absolute;
+            right: 20px;
+            color:$font_color_white;
+            &:hover {
+                color: $font_color_dark_white;
+            }
+        }
+    }
+}
+
+
+.from {
+    h4 {
+        border-bottom: 1px solid $button_background_1_hover;
+        padding-bottom: 10px;
+    }
+    .title {
+        display: block;
+        margin-bottom: 0px;
+        font-size: 16px;
+        color: $font_color_white;
+    }
+    
+    label {
+        color: $font_color_white;
+        display: block;
+        @include Montserrat-Light
+    }
+    input, textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .name-box {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        width: 100%;
+
+    }
+    .btn-1 {
+        background: $btn_border_color;
+        color: $font_color_white;
+        padding: 5px 40px;
+        margin: auto;
+    }
+}
+
+
+
+.sing-up-form {
+    margin-top: 20px;
+    .sign-up-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        input, button {
+            padding: 7px 10px;
+        }
+
+        input::placeholder {
+            @include NeueKabel-Light
+        }
+
+    }
+}

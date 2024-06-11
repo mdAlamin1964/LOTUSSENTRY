@@ -1,0 +1,19 @@
+@import './_fonts';
+@import './_mixins';
+@import './_config';
+@import './_resets';
+@import './_sactions';
+@import './_modules';
+@import './_landing_page';
+
+
+
+@import './_responsive';
+
+
+// Landing page styles
+body {
+    @include main_background;
+    font-family: 'NeueKabel-Medium';
+}
+

@@ -1,0 +1,34 @@
+
+// Main-background
+@mixin main_background() {
+    background: rgb(6,7,9);
+    background: linear-gradient(0deg, rgba(6,7,9,1) 0%, rgba(17,22,29,1) 59%);
+}
+
+
+
+@mixin NeueKabel-Light() {
+    font-family: 'NeueKabel-Light';
+}
+
+@mixin NeueKabel-Medium() {
+    font-family: 'NeueKabel-Medium';
+}
+
+@mixin georgia() {
+    font-family: 'georgia';
+}
+
+@mixin Montserrat-Light() {
+    font-family: 'Montserrat-Light';
+}
+
+
+@mixin Montserrat-Medium() {
+    font-family: 'Montserrat-Medium';
+}
+
+
+@mixin NeueKabel() {
+    font-family: 'NeueKabel';
+}
